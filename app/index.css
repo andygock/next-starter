@@ -1,0 +1,66 @@
+/* Minimal CSS reset - keeps things small and predictable across browsers */
+
+/* Remove default spacing */
+:where(html, body) {
+  margin: 0;
+  padding: 0;
+}
+
+/* Border-box sizing for predictable sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Make media and form elements behave more consistently */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove list styles and default paddings/margins for lists */
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tables: collapse borders by default */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Make links and buttons inherit color by default */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+}
+
+/* Sensible focus outline for accessibility (can be customized) */
+:where(:focus) {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
